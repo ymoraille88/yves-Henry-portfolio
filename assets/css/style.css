@@ -1,5 +1,6 @@
 body {
-    background-color: white;
+    background-color: black;
+
 }
 
 
@@ -8,13 +9,17 @@ body {
     margin: 0 auto;
 }
 
-.container>header {
+.container > header {
     padding: 20px;
     background-color: beige;
     color: green;
     display: flex;
     justify-content: space-between;
 }
+.container main {
+    color: maroon;
+}
+
 
 .container h1 {
     font-size: 64px;
@@ -32,21 +37,38 @@ nav a {
     display: flex;
     flex-direction: row;
 }
+.row h3{
+    color: white; 
+    text-decoration: underline;
+}
 
-#projects {
+.projects h2 {
     padding: 16px;
     margin-left: -20px;
     display: flex;
-    flex-wrap: inherit;
+    flex-wrap: wrap;
 }
-
 #projects article {
-    padding-bottom: 100px;
+    padding-bottom: 10px;
 
 }
+.projects h3 {
+color: white;
+}
 
-article article img {
+article img {
     width: 100%;
+}
+
+.photo{
+    display: flex;
+    align-items: flex-start;
+}
+ 
+.photo{ 
+    margin-right: 16px;
+    margin-bottom: 16px;
+    width: 100px;
 }
 
 
@@ -57,13 +79,15 @@ section {
 }
 
 section h2 {
-    font-size: 30px;
+    font-size: 40px;
+    padding: 25px;
+    color: green;
+    font-style: italic;
 }
 
 footer {
     padding: 20px;
     background-color: beige;
-    color: green;
     /* display: flex; */
     /* justify-content: flex-start;  */
 }
@@ -85,4 +109,5 @@ article img {
 article {
     width: 50%;
     padding: 20px;
+    
 }
