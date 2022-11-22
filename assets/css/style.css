@@ -1,17 +1,55 @@
-
-body{
-    background-color:white;
+body {
+    background-color: white;
 }
 
 
 .container {
-    max-width:1140px;
-    margin:0 auto;
-    }
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
-    .container > header {
-        padding: 20px;
-        background-color: beige;
-        color: green
+.container>header {
+    padding: 20px;
+    background-color: beige;
+    color: green;
+    /* display: flex; */
+    justify-content: space-between;
+}
 
-    }
+.container h1 {
+    font-size: 64px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav {
+    margin-left: 63%;
+}
+
+nav a {
+    font-size: 24px;
+    /* margin-top: 75px; */
+
+    margin: 12px;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+.row{
+   display: flex;
+   flex-direction: row;
+}
+.column1{
+    width: 35%;
+    height: 100vh;
+
+}
+.column2{
+    width: 65%;
+    height: 100vh;
+}
+.projects{
+margin-left: 75%;
+}
+
+
+
