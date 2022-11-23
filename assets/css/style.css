@@ -9,20 +9,21 @@ body {
     margin: 0 auto;
 }
 
-.container > header {
+.container>header {
     padding: 20px;
     background-color: beige;
     color: green;
     display: flex;
     justify-content: space-between;
 }
+
 .container main {
     color: maroon;
 }
 
 
 .container h1 {
-    font-size: 64px;
+    font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -33,39 +34,37 @@ nav a {
     text-decoration: none;
 }
 
-.row .container {
-    display: flex;
-    flex-direction: row;
-}
-.row h3{
-    color: white; 
+
+.row h3 {
+    color: white;
     text-decoration: underline;
+    text: italic
 }
 
-.projects h2 {
-    padding: 16px;
+#projects h2 {
+    padding: 5px;
     margin-left: -20px;
     display: flex;
     flex-wrap: wrap;
-}
-#projects article {
-    padding-bottom: 10px;
 
 }
-.projects h3 {
-color: white;
+
+#projects h3 {
+    padding-top: 64px;
+    color: white;
+    text: italic
 }
 
 article img {
     width: 100%;
 }
 
-.photo{
+.photo {
     display: flex;
     align-items: flex-start;
 }
- 
-.photo{ 
+
+.photo {
     margin-right: 16px;
     margin-bottom: 16px;
     width: 100px;
@@ -88,8 +87,6 @@ section h2 {
 footer {
     padding: 20px;
     background-color: beige;
-    /* display: flex; */
-    /* justify-content: flex-start;  */
 }
 
 footer a {
@@ -109,5 +106,28 @@ article img {
 article {
     width: 50%;
     padding: 20px;
-    
+
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    nav a:first-of-type {
+        margin-left: 0;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
 }
